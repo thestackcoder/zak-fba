@@ -59,7 +59,7 @@ button{
 }
 
 .cross{
-    width: 12px;
+    width: 10px !important;
 }
 
 .bell{
