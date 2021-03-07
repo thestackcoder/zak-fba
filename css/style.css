@@ -29,7 +29,7 @@ body{
 .card-header{
     background-color: #FF9900;
     border-radius: 10px 10px 0 0 !important;
-    padding: 0.1rem 1rem 0.1rem 0.5rem !important;
+    padding: 0rem 0.8rem 0rem 0.5rem!important;
     border: none !important;
 }
 
@@ -54,7 +54,7 @@ button{
 }
 
 .logo{
-    width: 55px;
+    width: 60px;
     height: 40px;
 }
 
@@ -134,25 +134,11 @@ input:focus{
 }
 
 #partitioned {
-    padding-left: 15px;
-    letter-spacing: 10px;
-    border: 0;
-    /* background-image: linear-gradient(to left, black 40%, rgba(255, 255, 255, 0) 0%); */
-    background-position: bottom;
-    background-size: 50px 1px;
-    background-repeat: repeat-x;
-    background-position-x: 35px;
     width: 300px;
     min-width: 300px;
     height: 40px;
     text-align: center;
     font-size: 12px;
-    font-weight: bold;
-  }
-  
-  #divInner{
-    left: 0;
-    position: sticky;
   }
   
   #divOuter{
@@ -161,5 +147,6 @@ input:focus{
   }
 
   ::placeholder{
-      color: #D2D4D7;
+    color: #D2D4D7;
+    font-size: 20px;
   }
