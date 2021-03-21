@@ -6,7 +6,7 @@
     <title>FBA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css">
+    <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
 </head>
 <body>
 
@@ -19,19 +19,19 @@
                     <a href="#" style="margin-right: 15px;">
                         <img class="bell" src="https://thestackcoder.github.io/zak-fba/img/bell.svg" alt="">
                     </a>
-                    <a href="#" style="margin-right: 15px;">
-                        <img class="cross" src="https://thestackcoder.github.io/zak-fba/img/line.svg" alt="">
+                    <a href="#" style="margin-right: 15px;" id="minimize">
+                        <img class="cross fb" src="https://thestackcoder.github.io/zak-fba/img/line.svg" alt="">
                     </a>
                     <a href="#">
                         <img class="cross" src="https://thestackcoder.github.io/zak-fba/img/cross.svg" alt="">
                     </a>
                 </div>
             </div>
-            <div class="card-body d-flex flex-column">
-                <div class="text-center mt-2">
+            <div class="card-body" id="card">
+                <div class="text-center" style="margin-top: 4px;">
                     <img class="illus" src="https://thestackcoder.github.io/zak-fba/img/Illustraton.svg" alt="">   
                 </div>
-                <p class="para mt-3 font-weight-bold mb-0">Type your Activation Key</p>
+                <p class="para font-weight-bold mb-0" style="margin-top: 15px;">Type your Activation Key</p>
                 <div class="text-center mt-1">
                     <div id="divOuter">
                         <div id="divInner">
@@ -42,7 +42,9 @@
                 <div class="text-center">
                     <button class="save mt-3 btn" id="btn-warning" >Save License Key</button>
                 </div>
-                <span class="text-center text-secondary mt-2 or">Or</span>
+                <div class="text-center mt-1">
+                    <span class="text-secondary or">Or</span>
+                </div>
                 <div class="text-center">
                     <button class="save mt-2 btn" id="buy" >Buy License</button>
                 </div>
@@ -60,7 +62,7 @@
                 </div>
                 <div class="d-flex flex-row footer justify-content-between">
                     <span>fbamultitool.com</span>
-                    <a href=""><span>Report a bug</span></a>
+                    <a href="" class="d-flex flex-row "><img style="margin-top: -1px;" class="cross mr-1" src="/img/bug.svg" alt=""><span>Report a bug</span></a>
                 </div>
             </div>
           </div>
@@ -69,5 +71,22 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#minimize').click(function(){
+                $('#card').toggle();
+                if($(this).children().hasClass('fb')) {
+                    $(this).children().removeClass('fb');
+                    $(this).children().attr('src', '/img/full.svg');
+                    $('.card-header').addClass('border-lg');
+                } else {
+                    $(this).children().addClass('fb');
+                    $(this).children().attr('src', 'https://thestackcoder.github.io/zak-fba/img/line.svg');
+                    $('.card-header').removeClass('border-lg');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

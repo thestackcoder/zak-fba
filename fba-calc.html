@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBA - Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="card">
+            <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                <img class="logo" src="https://thestackcoder.github.io/zak-fba/img/FMTiconfile-1 1.svg" alt="">
+                <div class="d-flex flex-row align-items-center">
+                    <button class="upgrade" style="margin-right: 15px;">Upgrade</button>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="https://thestackcoder.github.io/zak-fba/img/bell.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="/img/settings.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;" id="minimize">
+                        <img class="cross fb" src="https://thestackcoder.github.io/zak-fba/img/line.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="cross" src="https://thestackcoder.github.io/zak-fba/img/cross.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="main-card" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="card-body p-0" style="height: 520px;">
+                <div class="menu bg-white d-flex flex-row align-items-center">
+                    <span><a href="main-tool.html">Info & Sales Data</a></span>
+                    <span class="bold" style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a><hr class="m-0 p-0 border-bot" style="left: 45.7% !important;"></span>
+                    <span style="margin-left: 25px"><a href="advance.html">Advanced</a></span>
+                    <span style="margin-left: 25px"><a href="menu.html">Menu</a></span>
+                </div>
+                <div class="product">
+                    <div id="accordion">
+                        <div>
+                            <!--FBA Calculator-->
+                            <div id="calculator">
+                                <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                                    <p class="m-0">
+                                        FBA Calculator
+                                    </p>
+                                    <img src="/img/settingsorange.svg" alt="">
+                                </div>
+                            
+                                <div class="show">
+                                    <div class="card-body" style="padding: 0px 5px 0px 5px !important;">
+                                        <div class="body">
+                                            <form style="margin-right: 5px; margin-top: 10px;">
+                                                <div class="form-group p-0 m-0">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <label class="middle m-0 p-0" for="formControlRange">Voucher Discount</label>
+                                                        <p class="m-0 orange_text" id="demo"></p>
+                                                     </div>
+                                                  <input type="range" class="form-control-range range" min="0" max="100" value="50" style="width: 290px !important;" id="formControlRange">
+                                                </div>
+                                                <div class="d-flex flex-row justify-content-between mt-2">
+                                                    <label class="middle m-0 p-0" for="formControlRange">Buy Price</label>
+                                                    <label class="middle m-0 p-0" for="formControlRange">Qty</label>
+                                                </div>
+                                                <div class="row p-0 mt-2">
+                                                    <div class="col-2 p-0" style="padding-left: 15px !important; padding-right: 10px !important;">
+                                                        <select class="discount w-100" type="text">
+                                                            <option value="">£</option>
+                                                            <option value="">$</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-8 p-0">
+                                                         <input class="discount" type="text" id="price" placeholder="Type your price" />
+                                                    </div>
+                                                    <div class="col-2 p-0" style="padding-left: 10px !important; padding-right: 15px !important;">
+                                                        <select class="discount w-100" type="text">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                            <option value="">4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row p-0 mt-2">
+                                                    <div class="col-6 p-0" style="padding-left: 15px !important; padding-right: 5px !important;">
+                                                        <div class="d-flex flex-row justify-content-between mt-1">
+                                                            <label class="middle m-0 p-0" for="formControlRange">Sell Price</label>
+                                                            <label class="middle m-0 p-0" for="formControlRange">FBA</label>
+                                                        </div>
+                                                        <input class="discount mt-2" type="text" id="price" value="29.99" placeholder="29.99" style="color: #777777;" />
+                                                    </div>
+                                                    <div class="col-6 p-0"  style="margin-top: 22px; padding-left: 5px !important; padding-right: 15px !important;">
+                                                         <input class="discount betn" type="button" id="price" value="Calculate Profit" />
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 pl-3">
+                                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                            <label class="middle p-0" for="formControlRange">EFN</label>
+                                                            <label class="switch ml-2">
+                                                                <input type="checkbox" id="main_swtich" checked>
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center" style="margin-left: 38px;">
+                                                            <label class="middle p-0" for="formControlRange">FBM</label>
+                                                            <label class="switch ml-2">
+                                                                <input type="checkbox" id="main_swtich">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center" style="margin-left: 42px;">
+                                                            <label class="middle p-0" for="formControlRange">P&P</label>
+                                                            <label class="switch ml-2">
+                                                                <input type="checkbox" id="main_swtich">
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <label class="middle m-0 p-0" for="formControlRange">FBA Fees Breakdown</label>
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <span class="secondary m-0 p-0">Referral Fee: <span class="primary">£4.59</span></span><br>
+                                                            <span class="secondary m-0 p-0">Total FBA Fees: <span class="primary">£6.60</span></span><br>
+                                                            <span class="secondary m-0 p-0">Total Fees: <span class="orange_text">£7.92</span></span><br>
+                                                            <span class="secondary m-0 p-0">Your Profit is: <span class="primary">£22.06</span></span><br>
+                                                            <span class="secondary m-0 p-0">Profit Margin: <span class="primary">£73.58</span></span><br>
+                                                        </div>
+                                                        <div class="col-6 pl-0">
+                                                            <span class="secondary m-0 p-0">FBA Fees: <span class="primary">£4.59</span></span><br>
+                                                            <span class="secondary m-0 p-0">VAT on Fees: <span class="primary">£6.60</span></span><br><br>
+                                                            <span class="secondary m-0 p-0">Your ROI: <span class="primary">£22.06</span></span><br>
+                                                            <span class="secondary m-0 p-0">Profit Margin: <span class="primary">£73.58</span></span><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button class="amazon btn" id="btn-warning" >Log In to Amazon</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="card-footer p-0 m-0" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                <div class="bg-white d-flex flex-row footer justify-content-between" style="margin-top: 0px; padding: 11px 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                    <span>fbamultitool.com</span>
+                    <a href="" class="d-flex flex-row "><img style="margin-top: -1px;" class="cross mr-1" src="/img/bug.svg" alt=""><span>Report a bug</span></a>
+                </div>
+            </div>
+        </div>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#minimize').click(function(){
+                $('#main-card').toggle();
+                if($(this).children().hasClass('fb')) {
+                    $(this).children().removeClass('fb');
+                    $(this).children().attr('src', '/img/full.svg');
+                    $('.card-header').addClass('border-lg');
+                } else {
+                    $(this).children().addClass('fb');
+                    $(this).children().attr('src', 'https://thestackcoder.github.io/zak-fba/img/line.svg');
+                    $('.card-header').removeClass('border-lg');
+                }
+            });
+
+
+            if($('input[type="checkbox"]').prop('checked') == true){
+            }
+        });
+
+        var slider = document.getElementById("formControlRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value + '%';
+
+        slider.oninput = function() {
+            output.innerHTML = this.value + '%';
+        }
+
+    </script>
+</body>
+</html>

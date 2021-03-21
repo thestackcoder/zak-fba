@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: Circular_Bold;
+    src: url('/circular-std/fonts/CircularStd-Bold.woff');
+}
+
+@font-face {
     font-family: Circular_Book;
     src: url('https://thestackcoder.github.io/zak-fba/circular-std/fonts/CircularStd-Book.woff');
 }
@@ -28,8 +33,12 @@ body{
 
 .card-header{
     background-color: #FF9900;
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: 10px 10px 0px 0px !important;
     padding: 0rem 0.8rem 0rem 0.5rem!important;
+    border: none !important;
+}
+
+.card-footer{
     border: none !important;
 }
 
@@ -105,6 +114,7 @@ a{
     font-size: 12px;
     margin-top: 35px;
     font-family: Circular_Book;
+    line-height: 12px;
 }
 
 .footer a{
@@ -148,3 +158,445 @@ input:focus{
       color: #D2D4D7;
       size: 32px;
   }
+
+  .border-lg{
+      border-radius: 10px !important;
+  }
+
+  .border-sm{
+    border-radius: 5px !important;
+    }
+
+  #main-card{
+      background-color: #F2F4F6;
+  }
+
+  .bold{
+      font-family: Circular_Bold !important;
+      font-size: 11px;
+      line-height: 12px;
+  }
+
+  .border-bot{
+      margin: 3px auto auto auto !important;
+      width: 6px !important;
+      position: absolute;
+      left: 15%;
+      background-color: #FF9900;
+  }
+
+  .bold a{
+    color: #3E4042 !important;
+  }
+
+  .menu span{
+    font-family: Circular_Book;
+    font-size: 11px;
+    line-height: 12px;
+  }
+
+  .menu{
+      padding: 11px 15px;
+  }
+
+  .menu a{
+      text-decoration: none;
+    color: #777777;
+  }
+
+  .product{
+      margin: 10px 15px;
+  }
+
+  #accordion .card-header{
+      background-color: #fff;
+      border-radius: 5px 5px 0px 0px !important;
+      padding: 12px 15px !important;
+  }
+
+  #accordion .card-header:hover{
+      cursor: pointer;
+  }
+
+  #accordion .card-header p{
+      font-size: 11px;
+      line-height: 10px;
+      font-family: Circular_Bold;
+  }
+
+  #accordion .card-body{
+      background-color: #fff;
+      border-top: 1px solid #EFEFEF;
+      border-radius: 0px 0px 5px 5px !important;
+      padding: 5px 5px 15px 5px !important;
+  }
+
+  #accordion .body{
+    padding: 0px 5px 10px 10px !important;
+  }
+
+  #accordion .save{
+      width: 290px !important;
+      height: 35px !important;
+  }
+
+  #accordion .card-body .secondary{
+      font-size: 11px;
+      line-height: 10px;
+      font-family: Circular_Book;
+      color: #777777;
+  }
+
+  #accordion .card-body .primary{
+    font-size: 11px;
+    line-height: 10px;
+    font-family: Circular_Medium;
+    color: #3E4042 !important;
+  }
+
+  .main_table{
+      padding: 0px 10px;
+  }
+
+  table{
+      font-size: 11px;
+  }
+
+  table thead{
+      border-radius: 5px !important;
+      padding: 4px !important;
+      border-radius: 4px;
+      background-color: #F2F4F6;
+  }
+
+  table thead th{
+    line-height: 10px;
+    font-family: Circular_Medium;
+    color: #777777 !important;  
+    padding: 7.5px !important;
+  }
+
+  table thead th:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  table thead th:last-of-type{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  td, th{
+      border: none !important;
+      font-family: Circular_Medium !important;
+      color: #3E4042;
+      padding: 6px 7.5px !important;
+  }
+
+  .amazon{
+      width: 320px !important;
+        font-size: 11px;
+    height: 35px;
+    margin-top: 10px;
+  }
+
+  .aware{
+      font-family: Circular_Book !important;
+      line-height: 14px !important;
+  }
+
+  .card-body .middle{
+    font-size: 11px;
+    line-height: 10px;
+    font-family: Circular_Medium;
+    color: #3E4042 !important;
+  }
+
+.range{
+    margin-top: 12px;
+    margin-bottom: 17px;
+    height: 2px !important;
+    background-color: #F2F4F6 !important;
+    -webkit-appearance: none;
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.orange_text{
+    color: #FF9900 !important;
+    font-family: Circular_Bold;
+    font-size: 11px;
+}
+
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px !important;
+    height: 10px !important;
+    background: #FF9900 !important;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .range::-webkit-slider-thumb:hover {
+    background: #1abc9c;
+  }
+  .range:active::-webkit-slider-thumb {
+    background: #1abc9c;
+  }
+
+  .range {
+    -webkit-appearance: none;
+  }
+  
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #FF9900;
+    cursor: pointer;
+  }
+  
+  .range::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #FF9900;
+    cursor: pointer;
+  } 
+
+  .range::-moz-range-thumb:hover {
+    background: #1abc9c;
+  }
+  .range:active::-moz-range-thumb {
+    background: #1abc9c;
+  }
+  .range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 3px #FF9900;
+  }
+
+  .discount{
+    padding-left: 8px;
+    height: 30px;
+    font-size: 12px !important;
+    background-color: #F2F4F6;
+    border-radius: 3px;
+    border: none;
+    font-family: Circular_Book;
+  }
+
+  #price{
+    padding-left: 10px;
+    width: 100% !important;
+  }
+
+    select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    }
+
+    .betn{
+        background-color: #FF9900 !important; 
+        color: #3E4042 !important;
+        font-family: Circular_Bold !important;
+    }
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+    }
+    
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #F2F4F6;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 4px;
+        bottom: 3px;
+        background-color: #ACACAC;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider:before{
+        background-color: #FF9900;
+    }
+    
+    input:checked + .slider {
+        background-color: #F5F1EA;
+    }
+    
+    /* input:focus + .slider {
+        box-shadow: 0 0 1px #FF9900;
+    } */
+    
+    input:checked + .slider:before {
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    .grey{
+        font-size: 7px;
+        color: #777777;
+        background-color: #F2F4F6;
+        padding: 0px 3.5px;
+        border-radius: 50%;
+    }
+
+    .auto{
+        width: 290 !important;
+          font-size: 11px;
+      height: 35px;
+      margin-top: 10px;
+    }
+
+    .main-menu p{
+        font-size: 11px;
+        line-height: 10px;
+        color: #3E4042;
+    }
+
+    #back{
+        font-family: Circular_Book !important;
+        color: #777777 !important;
+    }
+
+    .btnDefault,
+    .btnUpload {
+      background-color: #F2F4F6;
+      color: #777777;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Circular_Book !important;
+      text-align: center;
+      font-size: 10px !important;
+      line-height: 10px;
+      text-decoration: none;
+      vertical-align: middle;
+    }
+    .btnDefault:focus,
+    .btnUpload:focus {
+      background-color: #E6E6E6;
+    }
+    .btnM {
+      border-radius: 3px;
+      font-size: 10px;
+      padding: 10px 12px;
+      margin-bottom: 0px;
+      margin-top: 10px;
+    }
+    .customUpload {
+      overflow: hidden;
+      position: relative;
+      display: block;
+    }
+    .customUpload input.upload {
+      cursor: pointer;
+      margin: 0;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #sub{
+        font-family: Circular_Book;
+    }
+
+     
+    .blue
+    {
+        background-color:blue;
+        position:relative;
+    }
+    
+    .block 
+    {
+        width:100%;
+        height:200px;
+    }
+
+    .bigform-content {
+        overflow: hidden;
+        position:relative;
+    }
+
+    .modal, .modal-backdrop {
+        position: absolute !important;
+    }
+
+    #dialog_confirm_map{
+        padding: 15px;
+        border: none !important;
+    }
+
+    .modal-content{
+        border: none;
+    }
+
+    .modal-fields{
+        font-size: 12px;
+        line-height: 10px;
+        font-family: Circular_Medium !important;
+    }
+
+    .mws{
+        height: 40px;
+    }
+
+    .check-in{
+        font-size: 10px;
+        line-height: 14px;
+        color: #777777;
+        font-family: Circular_Book;
+        padding-left: 24px; 
+        padding-right: 24px;
+        text-align: center;
+        margin-top: 10px !important;
+    }
+
+    .export{
+        font-size: 10px !important;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #777777 !important;
+        opacity: 1; /* Firefox */
+        font-family: Circular_Book !important;
+    }

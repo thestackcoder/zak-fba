@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBA - Advance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="card">
+            <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                <img class="logo" src="https://thestackcoder.github.io/zak-fba/img/FMTiconfile-1 1.svg" alt="">
+                <div class="d-flex flex-row align-items-center">
+                    <button class="upgrade" style="margin-right: 15px;">Upgrade</button>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="https://thestackcoder.github.io/zak-fba/img/bell.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="/img/settings.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;" id="minimize">
+                        <img class="cross fb" src="https://thestackcoder.github.io/zak-fba/img/line.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="cross" src="https://thestackcoder.github.io/zak-fba/img/cross.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="main-card" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="card-body p-0"  style="height: 520px;">
+                <div class="menu bg-white d-flex flex-row align-items-center">
+                    <span><a href="">Info & Sales Data</a></span>
+                    <span style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a></span>
+                    <span class="bold" style="margin-left: 25px"><a href="advance.html">Advanced</a><hr class="m-0 p-0 border-bot" style="left: 70.5% !important;"></span>
+                    <span style="margin-left: 25px"><a href="menu.html">Menu</a></span>
+                </div>
+                <div class="product">
+                    <div id="accordion">
+                        <div class="prosales">
+                            <div class="card-header d-flex flex-row justify-content-between" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p class="m-0">
+                                    Advanced
+                                </p>
+                                <img src="/img/Vector (1).svg" alt="">
+                            </div>
+                        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="body">
+                                        <div class="row" style="margin-top: 5px;">
+                                            <div class="col text-center">
+                                                <img src="img/meter.svg" alt="">
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">PL Detector <span class="grey" data-toggle="tooltip" data-placement="top" title="Information">i</span></span>
+                                            </div>
+                                            <div class="col text-center">
+                                                <img src="img/pie.svg" alt="">
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-1">
+                                        <button class="save btn" id="buy" >Variation Viewer</button>
+                                    </div>
+                                    <span class="primary" style="margin-left: 10px;">ROI Buy Price</span>
+                                    <div class="text-center">
+                                        <button class="auto btn" id="btn-warning" style="width: 290px;" >Auto Ungate</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px">
+                            <div class="prosales">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingTwo" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p class="m-0">
+                                        Score
+                                    </p>
+                                    <img src="/img/Vector.svg" alt="">
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body pb-0">
+                                        <div class="body text-center">
+                                            <img src="img/score.svg" class="mt-1" alt="">
+                                        </div>
+                                    
+                                        <p class="aware text-center secondary m-0 p-0">This item has a excellent score.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="prosales" style="margin-top: 10px;">
+                                <div class="card-header d-flex flex-row justify-content-between" id="headingThree" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p class="m-0">
+                                        EU Marketplaces
+                                    </p>
+                                    <img src="/img/Vector.svg" alt="">
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="body">
+                                            <div class="row p-0 mt-2">
+                                                <div class="col-7 p-0" style="padding-left: 15px !important; padding-right: 5px !important;">
+                                                    <div class="d-flex flex-row justify-content-between mt-1">
+                                                        <label class="middle m-0 p-0" for="formControlRange">ROI%</label>
+                                                        <label class="middle m-0 p-0" for="formControlRange">Buy Price 16.84</label>
+                                                    </div>
+                                                    <input class="discount mt-2" type="text" id="price" value="29.99" placeholder="29.99" style="color: #777777;" />
+                                                </div>
+                                                <div class="col-5 p-0"  style="margin-top: 27px; padding-left: 5px !important; padding-right: 21px !important;">
+                                                    <div class="d-flex flex-row align-items-center justify-content-between">
+                                                        <label class="middle p-0" for="formControlRange">EFN</label>
+                                                        <label class="switch">
+                                                            <input type="checkbox" id="main_swtich" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <label class="middle p-0" for="formControlRange">EURO</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main_table">
+                                        <table class="table mb-0">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">GBP</th>
+                                                <th scope="col">Profit</th>
+                                                <th scope="col">ROI</th>
+                                                <th scope="col">Rank</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <td>3.68</td>
+                                                <td>20%</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <td>3.68</td>
+                                                <td>20%</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <td>3.68</td>
+                                                <td>20%</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <td>3.68</td>
+                                                <td>20%</td>
+                                                <td>13</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--FBA Calculator-->
+                            <div id="calculator">
+                                <div class="card-header d-flex flex-row justify-content-between">
+                                    <p class="m-0">
+                                        Product Information
+                                    </p>
+                                    <img src="/img/Vector (1).svg" alt="">
+                                </div>
+                            
+                                <div class="show">
+                                    <div class="card-body">
+                                        <div class="body">
+                                            <span class="secondary m-0 p-0">Product Category: <span class="primary">PC Video Game</span></span><br>
+                                            <span class="secondary m-0 p-0">PC Video Games Rank: <span class="primary">14</span></span><br>
+                                            <span class="secondary m-0 p-0">Sales Rank: <span class="primary">13</span></span><br>
+                                            <span class="secondary m-0 p-0">Weight: <span class="primary">0.10 KG1.19 x 16.99 x 10.49 cm 0.47 x 6.67 x 4.13 in</span></span><br>
+                                            <span class="secondary m-0 p-0">ASIN: <span class="primary">BO7DG77KPX</span></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="save btn" id="buy" >VA Check In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button class="amazon btn" id="btn-warning" >Log In to Amazon</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            <div class="card-footer p-0 m-0" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                <div class="bg-white d-flex flex-row footer justify-content-between" style="margin-top: 0px; padding: 11px 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                    <span>fbamultitool.com</span>
+                    <a href="" class="d-flex flex-row "><img style="margin-top: -1px;" class="cross mr-1" src="/img/bug.svg" alt=""><span>Report a bug</span></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#minimize').click(function(){
+                $('#main-card').toggle();
+                if($(this).children().hasClass('fb')) {
+                    $(this).children().removeClass('fb');
+                    $(this).children().attr('src', '/img/full.svg');
+                    $('.card-header').addClass('border-lg');
+                } else {
+                    $(this).children().addClass('fb');
+                    $(this).children().attr('src', 'https://thestackcoder.github.io/zak-fba/img/line.svg');
+                    $('.card-header').removeClass('border-lg');
+                }
+            });
+
+            $('#headingOne').click(function(){
+                if($(this).children().hasClass('chev')) {
+                    $(this).children().removeClass('chev');
+                    $(this).children().attr('src', '/img/Vector (1).svg');
+                    $(this).removeClass('border-sm');
+                } else {
+                    $(this).children().addClass('chev');
+                    $(this).children().attr('src', '/img/Vector.svg');
+                    $(this).addClass('border-sm');
+                }
+            });
+
+            $('#headingTwo').click(function(){
+                if($(this).children().hasClass('chev')) {
+                    $(this).children().removeClass('chev');
+                    $(this).children().attr('src', '/img/Vector.svg');
+                    $(this).removeClass('border-sm');
+                } else {
+                    $(this).children().addClass('chev');
+                    $(this).children().attr('src', '/img/Vector (1).svg');
+                    $(this).addClass('border-sm');
+                }
+            });
+
+            $('#calculator').hide();
+        });
+
+    </script>
+</body>
+</html>

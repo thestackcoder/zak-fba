@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBA - US Settings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
+</head>
+<body>
+
+    <div class="main">
+        <div class="card">
+            <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                <img class="logo" src="https://thestackcoder.github.io/zak-fba/img/FMTiconfile-1 1.svg" alt="">
+                <div class="d-flex flex-row align-items-center">
+                    <button class="upgrade" style="margin-right: 15px;">Upgrade</button>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="https://thestackcoder.github.io/zak-fba/img/bell.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;">
+                        <img class="bell" src="/img/settings.svg" alt="">
+                    </a>
+                    <a href="#" style="margin-right: 15px;" id="minimize">
+                        <img class="cross fb" src="https://thestackcoder.github.io/zak-fba/img/line.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="cross" src="https://thestackcoder.github.io/zak-fba/img/cross.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div id="main-card" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+            <div class="card-body p-0" style="height: 520px;">
+                <div class="menu bg-white d-flex flex-row align-items-center">
+                    <span><a href="main-tool.html">Info & Sales Data</a></span>
+                    <span style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a></span>
+                    <span style="margin-left: 25px"><a href="advance.html">Advanced</a></span>
+                    <span class="bold" style="margin-left: 25px"><a href="menu.html">Menu</a><hr class="m-0 p-0 border-bot" style="left: 88.3% !important;"></span>
+                </div>
+                <div class="product">
+                    <div id="accordion">
+                        <div>
+                            <!--FBA Calculator-->
+                            <div id="calculator">
+                                <a href="/settings.html" style="color: #3E4042;">
+                                    <div class="card-header d-flex flex-row align-items-center">
+                                        <img src="/img/back.svg" class="mr-1" alt="">
+                                        <p class="m-0" id="back">
+                                            Back to Settings
+                                        </p>
+                                    </div>
+                                </a>
+                            
+                                <div class="show">
+                                    <div class="card-body" style="padding: 4px 15px 10px !important;">
+                                        
+                                        <div class="row p-0 mt-1">
+                                            <div class="col-12 p-0" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                                <div class="d-flex flex-row justify-content-between mt-1">
+                                                    <label class="middle m-0 p-0" for="formControlRange">Fixed Inbound Shipping Per Pound (US)</label>
+                                                </div>
+                                                <input class="discount mt-2" type="text" id="price" style="color: #3E4042;" />
+                                            </div>
+                                        </div>
+
+                                        <div class="row p-0 mt-1">
+                                            <div class="col-12 p-0" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                                <div class="d-flex flex-row justify-content-between mt-1">
+                                                    <label class="middle m-0 p-0" for="formControlRange">Sales Tax <span style="font-size: 8.5px;">%</span></label>
+                                                </div>
+                                                <input class="discount mt-2" type="text" id="price" style="color: #3E4042;" />
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="amazon btn" id="btn-warning" >Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="card-footer p-0 m-0" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                <div class="bg-white d-flex flex-row footer justify-content-between" style="margin-top: 0px; padding: 11px 15px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                    <span>fbamultitool.com</span>
+                    <a href="" class="d-flex flex-row "><img style="margin-top: -1px;" class="cross mr-1" src="/img/bug.svg" alt=""><span>Report a bug</span></a>
+                </div>
+            </div>
+        </div>
+          </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#minimize').click(function(){
+                $('#main-card').toggle();
+                if($(this).children().hasClass('fb')) {
+                    $(this).children().removeClass('fb');
+                    $(this).children().attr('src', '/img/full.svg');
+                    $('.card-header').addClass('border-lg');
+                } else {
+                    $(this).children().addClass('fb');
+                    $(this).children().attr('src', 'https://thestackcoder.github.io/zak-fba/img/line.svg');
+                    $('.card-header').removeClass('border-lg');
+                }
+            });
+
+
+            if($('input[type="checkbox"]').prop('checked') == true){
+            }
+        });
+
+        var slider = document.getElementById("formControlRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value + '%';
+
+        slider.oninput = function() {
+            output.innerHTML = this.value + '%';
+        }
+
+    </script>
+</body>
+</html>
