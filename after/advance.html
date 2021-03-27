@@ -33,10 +33,10 @@
             <div id="main-card" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
             <div class="card-body p-0"  style="height: 520px;">
                 <div class="menu bg-white d-flex flex-row align-items-center">
-                    <span><a href="">Info & Sales Data</a></span>
+                    <span><a href="index.html">Info & Sales Data</a></span>
                     <span style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a></span>
                     <span class="bold" style="margin-left: 25px"><a href="advance.html">Advanced</a><hr class="m-0 p-0 border-bot" style="left: 70.5% !important;"></span>
-                    <span style="margin-left: 25px"><a href="menu.html">Menu</a></span>
+                    <span style="margin-left: 25px"><a href="/menu.html">Menu</a></span>
                 </div>
                 <div class="product">
                     <div id="accordion">
@@ -53,11 +53,11 @@
                                     <div class="body">
                                         <div class="row" style="margin-top: 5px;">
                                             <div class="col text-center">
-                                                <img src="img/meter.svg" alt="">
-                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">PL Detector <span class="grey" data-toggle="tooltip" data-placement="top" title="Information">i</span></span>
+                                                <img src="/img/meter.svg" alt="">
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">PL Detector <img class="white-tool" src="/img/info.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Less Than 3 Sellers.Brand: Mojang Is Not Seller.Be Cautious"></span>
                                             </div>
                                             <div class="col text-center">
-                                                <img src="img/pie.svg" alt="">
+                                                <img src="/img/pie.svg" alt="">
                                                 <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span>
                                             </div>
                                         </div>
@@ -67,7 +67,7 @@
                                         <button id="clear"><img src="/img/export.svg" alt=""> Export</button>
                                     </div>
                                     <div class="text-center mb-1">
-                                        <button class="save btn" id="buy" >Variation Viewer</button>
+                                        <a href="variation_viewer.html" class="save btn" id="buy" >Variation Viewer</a>
                                     </div>
                                     <span class="primary" style="margin-left: 10px;">ROI Buy Price</span>
                                     <p class="p-0 m-0">
@@ -95,7 +95,7 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body pb-0">
                                         <div class="body text-center">
-                                            <img src="img/score.svg" class="mt-1" alt="">
+                                            <img src="/img/score.svg" class="mt-1" alt="">
                                         </div>
                                     
                                         <p class="aware text-center secondary m-0 p-0">This item has a excellent score.</p>
@@ -120,7 +120,7 @@
                                                         <label class="middle m-0 p-0" for="formControlRange">ROI%</label>
                                                         <label class="middle m-0 p-0" for="formControlRange">Buy Price 16.84</label>
                                                     </div>
-                                                    <input class="discount mt-2" type="text" id="price" value="29.99" placeholder="29.99" style="color: #777777;" />
+                                                    <input class="discount mt-2" type="text" id="price" value="30" placeholder="29.99" style="color: #3E4042;" />
                                                 </div>
                                                 <div class="col-5 p-0"  style="margin-top: 27px; padding-left: 5px !important; padding-right: 21px !important;">
                                                     <div class="d-flex flex-row align-items-center justify-content-between">
@@ -146,25 +146,25 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="img/flag.svg" alt=""> £29.89</th>
+                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
@@ -200,10 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="text-center">
-                                <button class="amazon btn" id="btn-warning" >Log In to Amazon</button>
-                            </div>
+                        
                         </div>
                     </div>
 
@@ -226,6 +223,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
 
         $(document).ready(function(){
             $('#minimize').click(function(){

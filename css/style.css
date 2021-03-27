@@ -208,10 +208,20 @@ input:focus{
       margin: 10px 15px;
   }
 
+
+  .fourBorders{
+    border-radius: 5px !important;
+  }
+
   #accordion .card-header{
       background-color: #fff;
-      border-radius: 5px 5px 0px 0px !important;
+      border-radius: 5px !important;
       padding: 12px 15px !important;
+  }
+
+  .prosales{
+      background-color: #fff;
+      border-radius: 5px !important;
   }
 
   #accordion .card-header:hover{
@@ -600,3 +610,159 @@ input:focus{
         opacity: 1; /* Firefox */
         font-family: Circular_Book !important;
     }
+
+    .buttonIn {
+        width: 300px;
+        position: relative;
+        margin-bottom: 15px;
+    }
+      
+    .buttonIn input {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 15px;
+        width: 290px !important;
+        outline: none;
+        height: 35px;
+        border-radius: 3px;
+        font-size: 11px;
+    }
+      
+    .buttonIn button {
+        position: absolute;
+        top: 0;
+        border-radius: 3px;
+        right: 7px;
+        z-index: 2;
+        border: none;
+        width: 65px;
+        top: 5px;
+        line-height: 12px;
+        font-size: 11px;
+        font-family: Circular_Medium !important;
+        height: 25px;
+        font-weight: 300;
+        cursor: pointer;
+        background-color: #FF9900;
+        transform: translateX(2px);
+    }
+
+    .tooltip-inner {
+        background-color: #ffffff;
+        color: #3E4042;
+        font-size: 8px;
+        -webkit-box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 10px #ccc;
+        width: 175px;
+    }
+    .tooltip.bs-tooltip-bottom .arrow:before {
+        border-bottom-color: #fff !important;
+    }
+
+    .vary td{
+        color: #777777 !important;
+        line-height: 25px !important;
+        padding-left: 5px !important;
+    }
+
+    .vary td:nth-child(1){
+        padding-left: 10px !important;
+    }
+
+    .filters th{
+        color: #3E4042 !important;
+        font-family: Circular_Book !important;
+        font-size: 9px !important;
+        line-height: 7px !important;
+    }
+
+    .vary-head th{
+        padding-left: 5px !important;
+        padding-right: 0px !important;
+        font-family: Circular_Book !important;
+        line-height: 10px !important;
+        font-size: 10px;
+    }
+
+    .drop{
+        top: 175px;
+        left: 100px;
+        font-size: 8px;
+        line-height: 24px;
+        opacity: 0;
+    }
+
+    .opac{
+        opacity: 1 !important;
+    }
+
+    .drop a{
+        color: #3E4042 !important;
+        font-family: Circular_Book !important;
+        width: 35px;
+    }
+
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 12px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      .containerxx input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+    
+      /* Create a custom checkbox */
+      .checkmark2 {
+        position: absolute;
+        top: 12px;
+        left: 35px;
+        height: 8px;
+        width: 8px;
+        background-color: #fff;
+        border: 0.5px solid #777777;
+        border-radius: 1px;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .containerxx input:checked ~ .checkmark2 {
+        background-color: #FF9900;
+        border: none !important;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark2:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .containerxx input:checked ~ .checkmark2:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .containerxx .checkmark2:after {
+        left: 3px;
+        top: 1px;
+        width: 2px;
+        height: 5px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
