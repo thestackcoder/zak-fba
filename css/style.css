@@ -778,6 +778,13 @@ input:focus{
         background-color: #F2F4F6;
     }
 
+    .drop-select-big{
+        background:url(/img/drop.svg) no-repeat;
+        background-position: 125px 13px;
+        -webkit-appearance: none;
+        background-color: #F2F4F6;
+    }
+
     .small{
         font-family: Circular_Book !important;
         color: #777777;
@@ -806,4 +813,8 @@ input:focus{
         position: absolute;
         top: 40px;
         left: 65px;
+    }
+
+    #clear{
+        font-family: Circular_Medium !important;
     }
