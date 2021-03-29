@@ -53,7 +53,7 @@ body{
     background-color: #ffffff;
     border: none;
     border-radius: 3px;
-    color: #FF9900;
+    color: #FF9900 !important;
 }
 
 button:focus {outline:0;}
