@@ -58,7 +58,7 @@ body{
 
 button:focus {outline:0;}
 button{
-    color: #3E4042;
+    color: #3E4042 !important;
     font-weight: bold !important;
 }
 
@@ -217,7 +217,10 @@ input:focus{
       background-color: #fff;
       border-radius: 5px !important;
       padding: 12px 15px !important;
+      color: #3E4042 !important;
+      font-family: Circular_Medium !important;
   }
+
 
   .prosales{
       background-color: #fff;
@@ -326,7 +329,6 @@ input:focus{
     margin-top: 12px;
     margin-bottom: 17px;
     height: 2px !important;
-    background-color: #F2F4F6 !important;
     -webkit-appearance: none;
     width: calc(100% - (73px));
     height: 10px;
@@ -352,10 +354,10 @@ input:focus{
   }
 
   .range::-webkit-slider-thumb:hover {
-    background: #1abc9c;
+    background: #FF9900;
   }
   .range:active::-webkit-slider-thumb {
-    background: #1abc9c;
+    background: #FF9900;
   }
 
   .range {
@@ -370,7 +372,7 @@ input:focus{
     background: #FF9900;
     cursor: pointer;
   }
-  
+
   .range::-moz-range-thumb {
     width: 10px;
     height: 10px;
@@ -379,14 +381,16 @@ input:focus{
   } 
 
   .range::-moz-range-thumb:hover {
-    background: #1abc9c;
+    background: #FF9900;
   }
   .range:active::-moz-range-thumb {
-    background: #1abc9c;
+    background: #FF9900;
   }
   .range:focus::-webkit-slider-thumb {
     box-shadow: 0 0 0 1px #fff, 0 0 0 3px #FF9900;
   }
+
+  
 
   .discount{
     padding-left: 8px;
@@ -766,3 +770,40 @@ input:focus{
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
       }
+
+    .drop-select{
+        background:url(/img/drop.svg) no-repeat;
+        background-position: 16px 13px;
+        -webkit-appearance: none;
+        background-color: #F2F4F6;
+    }
+
+    .small{
+        font-family: Circular_Book !important;
+        color: #777777;
+        font-size: 8px;
+        line-height: 9px;
+        position: absolute;
+        top: 46px;
+        left: 30px;
+    }
+
+    .small-s{
+        font-family: Circular_Book !important;
+        color: #777777;
+        font-size: 8px;
+        line-height: 9px;
+        position: absolute;
+        top: 46px;
+        left: 112px;
+    }
+
+    .small-d{
+        font-family: Circular_Book !important;
+        color: #3E4042;
+        font-size: 8px;
+        line-height: 9px;
+        position: absolute;
+        top: 40px;
+        left: 65px;
+    }
