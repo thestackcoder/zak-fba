@@ -6,6 +6,7 @@
     <title>FBA - Advance</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/graphs.css">
     <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
 </head>
 <body>
@@ -31,12 +32,12 @@
                 </div>
             </div>
             <div id="main-card" style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-            <div class="card-body p-0"  style="height: 520px;">
+            <div class="card-body p-0"  style="height: 550px;">
                 <div class="menu bg-white d-flex flex-row align-items-center">
                     <span><a href="index.html">Info & Sales Data</a></span>
                     <span style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a></span>
                     <span class="bold" style="margin-left: 25px"><a href="advance.html">Advanced</a><hr class="m-0 p-0 border-bot" style="left: 70.5% !important;"></span>
-                    <span style="margin-left: 25px"><a href="/menu.html">Menu</a></span>
+                    <span style="margin-left: 25px"><a href="../menu.html">Menu</a></span>
                 </div>
                 <div class="product">
                     <div id="accordion">
@@ -53,13 +54,29 @@
                                     <div class="body">
                                         <div class="row" style="margin-top: 5px;">
                                             <div class="col text-center">
-                                                <img src="/img/meter.svg" alt="">
-                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">PL Detector <img class="white-tool" src="/img/info.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Less Than 3 Sellers.Brand: Mojang Is Not Seller.Be Cautious"></span>
+                                                <div>
+                                                    <img src="/img/guage-up.svg" alt="">
+                                                    <img class="position-absolute needle rotateimg0" src="/img/needle2.svg" alt="">
+                                                </div>
+                                                <span class="small d-block">Avoid</span>
+                                                <span class="small-s d-block">Safe</span>
+                                                <span class="small-d d-block">Cautious</span>
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 16px;">PL Detector <img class="white-tool" src="/img/info.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Less Than 3 Sellers.Brand: Mojang Is Not Seller.Be Cautious"></span>
                                             </div>
                                             <div class="col text-center">
-                                                <img src="/img/pie.svg" alt="">
-                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span>
+                                                <!-- <img src="img/pie.svg" alt=""> -->
+                                                <!-- <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span> -->
+                                                <div class="progress-circle1 over50 p69 ml-0" style="margin-left: 40px !important; margin-top: 3px;">
+                                                    <span><div class="FBA-progress-font FBA-InnerDiv"><p>3K - <br>3.7K</p></div></span>
+                                                    <div class="left-half-clipper2">
+                                                        <div class="first50-bar"></div>
+                                                        <div class="value-bar"></div>
+                                                    </div>
+                                                </div>
+
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 10px;">Sales Estimation</span>
                                             </div>
+                                            
                                         </div>
                                     </div>
                                     <div class="buttonIn">
@@ -67,7 +84,7 @@
                                         <button id="clear"><img src="/img/export.svg" alt=""> Export</button>
                                     </div>
                                     <div class="text-center mb-1">
-                                        <a href="variation_viewer.html" class="save btn" id="buy" >Variation Viewer</a>
+                                        <button class="save btn" id="buy" >Variation Viewer</button>
                                     </div>
                                     <span class="primary" style="margin-left: 10px;">ROI Buy Price</span>
                                     <p class="p-0 m-0">
@@ -95,7 +112,74 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body pb-0">
                                         <div class="body text-center">
-                                            <img src="/img/score.svg" class="mt-1" alt="">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="progress-circle over50 p69 ml-0">
+                                                        <span><div class="FBA-progress-font FBA-InnerDiv">69%</div></span>
+                                                        <div class="left-half-clipper">
+                                                            <div class="first50-bar"></div>
+                                                            <div class="value-bar"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pl-0">
+                                                    <div class="kt-space-10"></div>
+                                                    <div class="row pb-2 mt-5">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>ROI</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="row pb-2 mt-3">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Competition</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Average</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 pl-2">
+                                                    <div class="row pb-2">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Sales</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="row pb-2 mt-3">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Rank%</div><div class="col-lg-6  text-right NormalFontFBA fontblackColorFBA">Excellent</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="row pb-2 mt-3">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>BB Stock%</div><div class="col-lg-6  text-right NormalFontFBA fontblackColorFBA">Excellent</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+                                                </div>
+                                                <div class="col-6 pl-0">
+                                                    <div class="row pb-2">
+                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Amazon</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Poor</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="row pb-2 mt-3">
+                                                        <div class="col-lg-7 text-left NormalFontFBA fontgreyColorFBA"><label></label>Profit</div><div class="col-lg-5 text-right NormalFontFBA fontblackColorFBA">Poor</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <div class="row pb-2 mt-3">
+                                                        <div class="col-lg-7 pr-0 text-left NormalFontFBA fontgreyColorFBA"><label></label>Item Score (82%)</div><div class="col-lg-5 pl-0 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
+                                                    </div>
+                                                    <div class="progress progress-sm">
+														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+													</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     
                                         <p class="aware text-center secondary m-0 p-0">This item has a excellent score.</p>
@@ -120,7 +204,7 @@
                                                         <label class="middle m-0 p-0" for="formControlRange">ROI%</label>
                                                         <label class="middle m-0 p-0" for="formControlRange">Buy Price 16.84</label>
                                                     </div>
-                                                    <input class="discount mt-2" type="text" id="price" value="30" placeholder="29.99" style="color: #3E4042;" />
+                                                    <input class="discount mt-2" type="text" id="price" value="29.99" placeholder="29.99" style="color: #777777;" />
                                                 </div>
                                                 <div class="col-5 p-0"  style="margin-top: 27px; padding-left: 5px !important; padding-right: 21px !important;">
                                                     <div class="d-flex flex-row align-items-center justify-content-between">
@@ -146,25 +230,31 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/flag.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/germany.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/russia.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row"><img src="/img/flag.svg" alt=""> £29.89</th>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/spain.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td>3.68</td>
+                                                <td>20%</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/ireland.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
@@ -200,7 +290,10 @@
                                     </div>
                                 </div>
                             </div>
-                        
+                            
+                            <div class="text-center">
+                                <button class="amazon btn" id="btn-warning" >Log In to Amazon</button>
+                            </div>
                         </div>
                     </div>
 
@@ -224,11 +317,12 @@
 
     <script>
 
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-
         $(document).ready(function(){
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+
             $('#minimize').click(function(){
                 $('#main-card').toggle();
                 if($(this).children().hasClass('fb')) {

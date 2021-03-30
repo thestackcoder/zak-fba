@@ -284,7 +284,7 @@ input:focus{
 
   table thead th{
     line-height: 10px;
-    font-family: Circular_Medium;
+    font-family: Circular_Book !important;
     color: #777777 !important;  
     padding: 7.5px !important;
   }
@@ -301,7 +301,7 @@ input:focus{
 
   td, th{
       border: none !important;
-      font-family: Circular_Medium !important;
+      font-family: Circular_Book !important;
       color: #3E4042;
       padding: 6px 7.5px !important;
   }
@@ -811,10 +811,103 @@ input:focus{
         font-size: 8px;
         line-height: 9px;
         position: absolute;
-        top: 40px;
+        top: 45px;
         left: 65px;
     }
 
     #clear{
         font-family: Circular_Medium !important;
     }
+
+    /*extra*/
+
+    /*.progress-circle1 {
+        font-size: 8px;
+        margin: 20px;
+        position: relative;
+        padding: 0;
+        width: 7em;
+        height: 7em;
+        background-color: #F5F1EA;
+        border-radius: 50%;
+        line-height: 6em;
+    }
+
+    .progress-circle1 span {
+        position: absolute;
+        line-height: 6em;
+        width: 7em;
+        text-align: center;
+        display: block;
+        z-index: 2;
+    }
+
+    .progress-circle1 .FBA-InnerDiv {
+        background: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-top: 0px;
+        top: 20%;
+        margin-top: 22%;
+        line-height: 29px;
+    }
+
+    .progress-circle1 .FBA-progress-font {
+        font-family: Circular_Book;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 7px;
+        line-height: 10px;
+        color: #3E4042;
+    }
+
+    .progress-circle1.p69 .value-bar {
+        transform: rotate(248deg);
+    }
+
+    .progress-circle1 .value-bar {
+        position: absolute;
+        clip: rect(0, 6em, 7em, 0);
+        width: 7em;
+        height: 7em;
+        border-radius: 50%;
+        border: 3px solid #FF9900;
+        background-color: #4D642D;
+        box-sizing: border-box;
+    } */
+
+    .needle{
+        left: 79px;
+        top: 0px;
+    }
+
+    .rotateimg180 {
+        transform: rotate(90deg);
+        transform-origin: top left;
+        left: 120px;
+        top: 38px;
+    }
+
+    .rotateimg0 {
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        left: 40px;
+        top: 40px;
+    }
+
+    .rotateimg90 {
+        transform: rotate(0deg);
+        transform-origin: top left;
+        left: 79px;
+        top: 0px;
+    }
+
+
+
+
+
+
+    
