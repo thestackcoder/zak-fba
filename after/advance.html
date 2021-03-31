@@ -6,6 +6,7 @@
     <title>FBA - Advance</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/progress.css">
     <link rel="stylesheet" href="/css/graphs.css">
     <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
 </head>
@@ -37,7 +38,7 @@
                     <span><a href="index.html">Info & Sales Data</a></span>
                     <span style="margin-left: 25px"><a href="fba-calc.html" id="calc">FBA Calculator</a></span>
                     <span class="bold" style="margin-left: 25px"><a href="advance.html">Advanced</a><hr class="m-0 p-0 border-bot" style="left: 70.5% !important;"></span>
-                    <span style="margin-left: 25px"><a href="../menu.html">Menu</a></span>
+                    <span style="margin-left: 25px"><a href="/menu.html">Menu</a></span>
                 </div>
                 <div class="product">
                     <div id="accordion">
@@ -64,17 +65,23 @@
                                                 <span class="primary d-block" style="line-height: 9.26px; margin-top: 16px;">PL Detector <img class="white-tool" src="/img/info.svg" alt="" data-toggle="tooltip" data-placement="bottom" title="Less Than 3 Sellers.Brand: Mojang Is Not Seller.Be Cautious"></span>
                                             </div>
                                             <div class="col text-center">
+                                                <!-- END -->
                                                 <!-- <img src="img/pie.svg" alt=""> -->
                                                 <!-- <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span> -->
-                                                <div class="progress-circle1 over50 p69 ml-0" style="margin-left: 40px !important; margin-top: 3px;">
-                                                    <span><div class="FBA-progress-font FBA-InnerDiv"><p>3K - <br>3.7K</p></div></span>
-                                                    <div class="left-half-clipper2">
-                                                        <div class="first50-bar"></div>
-                                                        <div class="value-bar"></div>
+                                                <div class="progress progress11 mx-auto" data-value='50' >
+                                                    <span class="progress-left">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <span class="progress-right">
+                                                        <span class="progress-bar"></span>
+                                                    </span>
+                                                    <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                    <div class="h4 font-weight-bold">3K - 3.7K</div>
                                                     </div>
                                                 </div>
+                                                <!-- END -->
 
-                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 10px;">Sales Estimation</span>
+                                                <span class="primary d-block" style="line-height: 9.26px; margin-top: 4px;">Sales Estimation</span>
                                             </div>
                                             
                                         </div>
@@ -114,15 +121,21 @@
                                         <div class="body text-center">
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <div class="progress-circle over50 p69 ml-0">
-                                                        <span><div class="FBA-progress-font FBA-InnerDiv">69%</div></span>
-                                                        <div class="left-half-clipper">
-                                                            <div class="first50-bar"></div>
-                                                            <div class="value-bar"></div>
+                                                    <!-- Progress bar 1 -->
+                                                    <div class="progress progress12 mr-auto mt-3" data-value='82' >
+                                                        <span class="progress-left">
+                                                            <span class="progress-bar"></span>
+                                                        </span>
+                                                        <span class="progress-right">
+                                                            <span class="progress-bar"></span>
+                                                        </span>
+                                                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                        <div class="h2 font-weight-bold">82<span>%</span></div>
                                                         </div>
                                                     </div>
+                                                    <!-- END -->
                                                 </div>
-                                                <div class="col-6 pl-0">
+                                                <div class="col-6 pl-0" style="padding-right:20px;">
                                                     <div class="kt-space-10"></div>
                                                     <div class="row pb-2 mt-5">
                                                         <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>ROI</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
@@ -131,15 +144,15 @@
 														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                     </div>
                                                     <div class="row pb-2 mt-3">
-                                                        <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Competition</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Average</div>
+                                                        <div class="col-lg-7 text-left NormalFontFBA fontgreyColorFBA"><label></label>Competition</div><div class="col-lg-5 text-right NormalFontFBA fontblackColorFBA">Average</div>
                                                     </div>
                                                     <div class="progress progress-sm">
 														<div class="progress-bar kt-bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-6 pl-2">
+                                            <div class="row mt-2">
+                                                <div class="col-6" style="padding-left:15px;">
                                                     <div class="row pb-2">
                                                         <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Sales</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
                                                     </div>
@@ -159,7 +172,7 @@
 														<div class="progress-bar kt-bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 													</div>
                                                 </div>
-                                                <div class="col-6 pl-0">
+                                                <div class="col-6 pl-0" style="padding-right:20px;">
                                                     <div class="row pb-2">
                                                         <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Amazon</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Poor</div>
                                                     </div>
@@ -230,31 +243,31 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/flag.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="img/flag.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/germany.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="img/germany.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/russia.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="img/russia.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/spain.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="img/spain.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
                                             </tr>
                                             <tr>
-                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="/img/ireland.svg" alt=""> <span class="ml-2"> £29.89</span></td>
+                                                <td scope="row" class="d-flex flex-row align-items-center"><img src="img/ireland.svg" alt=""> <span class="ml-2"> £29.89</span></td>
                                                 <td>3.68</td>
                                                 <td>20%</td>
                                                 <td>13</td>
@@ -318,7 +331,6 @@
     <script>
 
         $(document).ready(function(){
-
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()
             })
@@ -361,6 +373,33 @@
             });
 
             $('#calculator').hide();
+        });
+
+        $(function() {
+
+            $(".progress").each(function() {
+
+            var value = $(this).attr('data-value');
+            var left = $(this).find('.progress-left .progress-bar');
+            var right = $(this).find('.progress-right .progress-bar');
+
+            if (value > 0) {
+                if (value <= 50) {
+                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+                } else {
+                right.css('transform', 'rotate(180deg)')
+                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+                }
+            }
+
+            })
+
+            function percentageToDegrees(percentage) {
+
+            return percentage / 100 * 360
+
+            }
+
         });
 
     </script>

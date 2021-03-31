@@ -6,6 +6,7 @@
     <title>FBA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/progress.css">
     <link rel="stylesheet" href="/css/graphs.css">
     <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
 </head>
@@ -60,17 +61,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6 offset-3 text-center">
-                                            <div class="progress-circle progress-circle-warning over50 p69 ml-2 ">
-                                                <span><div class="FBA-progress-font FBA-InnerDiv"><p>3K - <br>3.7K</p></div></span>
-                                                <div class="left-half-clipper left-half-clipper-2">
-                                                    <div class="first50-bar first50-bar2"></div>
-                                                    <div class="value-bar value-bar2"></div>
+                                            <div class="progress progress13 mx-auto" data-value='81'>
+                                                <span class="progress-left">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <span class="progress-right">
+                                                    <span class="progress-bar"></span>
+                                                </span>
+                                                <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                                                <div class="h5 font-weight-bold">3K-3.7K</div>
                                                 </div>
                                             </div>
                                         </div>    
 
                                     </div>
-                                    <span class="primary d-block text-center" style="line-height: 9.26px; font-size: 12px; margin-top: -8px;">Sales Estimation</span>
+                                    <span class="primary d-block text-center" style="line-height: 9.26px; font-size: 12px; margin-top: 8px;">Sales Estimation</span>
                                     <div class="text-center mt-3">
                                         <button class="save btn" id="buy" >VA Check In</button>
                                     </div>
@@ -218,6 +223,33 @@
             });
 
             $('#calculator').hide();
+        });
+
+        $(function() {
+
+        $(".progress").each(function() {
+
+        var value = $(this).attr('data-value');
+        var left = $(this).find('.progress-left .progress-bar');
+        var right = $(this).find('.progress-right .progress-bar');
+
+        if (value > 0) {
+            if (value <= 50) {
+            right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+            } else {
+            right.css('transform', 'rotate(180deg)')
+            left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+            }
+        }
+
+        })
+
+        function percentageToDegrees(percentage) {
+
+        return percentage / 100 * 360
+
+        }
+
         });
 
     </script>
