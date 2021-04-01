@@ -22,6 +22,7 @@
 body{
     background-color: #E5E5E5;
     font-family: Circular;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .card{
@@ -54,6 +55,15 @@ body{
     border: none;
     border-radius: 3px;
     color: #FF9900 !important;
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .upgrade{
+            font-family: Circular_Book !important;
+            letter-spacing: -0.5px;
+        }
+    }
 }
 
 button:focus {outline:0;}
