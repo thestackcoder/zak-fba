@@ -1611,5 +1611,7 @@ top: 43%;
 }
 
 .progress-sm{
-    height: 0.4rem !important;
+	height: 10px !important;
+	border: 2px solid #F2F4F6;
+	background-color: #F2F4F6;
 }

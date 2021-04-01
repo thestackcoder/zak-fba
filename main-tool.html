@@ -13,7 +13,7 @@
 <body>
 
     <div class="main">
-        <div class="card">
+        <div class="card bigform-content">
             <div class="card-header d-flex flex-row align-items-center justify-content-between">
                 <img class="logo" src="https://thestackcoder.github.io/zak-fba/img/FMTiconfile-1 1.svg" alt="">
                 <div class="d-flex flex-row align-items-center">
@@ -77,7 +77,7 @@
                                     </div>
                                     <span class="primary d-block text-center" style="line-height: 9.26px; font-size: 12px; margin-top: 8px;">Sales Estimation</span>
                                     <div class="text-center mt-3">
-                                        <button class="save btn" id="buy" >VA Check In</button>
+                                        <button class="save btn va-login" id="buy" >VA Check In</button>
                                     </div>
                                 </div>
                             </div>
@@ -175,6 +175,43 @@
                 </div>
             </div>
         </div>
+
+         <!-- Modal -->
+         <div class="modal fade" style="padding-top: 110px;" id="dialog_confirm_map" tabindex="-1" role="dialog" aria-labelledby="dialog_confirm_mapLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="text-center p-0 mb-2">Log In</p>
+                        <div class="row p-0 mt-1">
+                            <div class="col-12 p-0" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                <div class="d-flex flex-row justify-content-between mt-1">
+                                    <label class="middle m-0 p-0 modal-fields" for="formControlRange">Email Address</label>
+                                </div>
+                                <input class="discount mt-2 mws" type="text" placeholder="Enter Email" id="price" style="color: #3E4042;" />
+                            </div>
+                            <div class="col-12 p-0 mt-2" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                <div class="d-flex flex-row justify-content-between mt-1">
+                                    <label class="middle m-0 p-0 modal-fields" for="formControlRange">Name</label>
+                                </div>
+                                <input class="discount mt-2 mws" type="text" placeholder="Enter Name" id="price" style="color: #3E4042;" />
+                            </div>
+                            <div class="text-center" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                <button class="amazon btn" style="width: 290px !important; height: 40 !important;" id="btn-warning" >Check In</button>
+                            </div>
+                            <div class="text-center" style="padding-left: 15px !important; padding-right: 15px !important;">
+                                <button class="amazon btn" data-dismiss="modal" style="background-color: #F2F4F6 !important; width: 290px !important; height: 40 !important;" id="btn-warning" >Close</button>
+                            </div>
+                            <p class="check-in m-0">By clicking "Check In" you agree with your employer that they can monitor your work load with our time tracking and screenshot service.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+
           </div>
     </div>
 
@@ -183,6 +220,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
+
+
+        $(function () {
+            
+            //getting click event to show modal
+            $('.va-login').click(function () {
+                $('#dialog_confirm_map').modal();
+            
+            //appending modal background inside the bigform-content
+                $('.modal-backdrop').appendTo('.bigform-content');
+            //removing body classes to enable click events
+                $('body').removeClass();
+            });
+
+
+            //just to prove actions outside modal
+            $('#help-button').click(function () {
+                alert("Action with modal opened or closed");
+            });
+            //end just to prove actions outside modal
+        });
 
         $(document).ready(function(){
             $('#minimize').click(function(){
