@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/progress.css">
     <link rel="stylesheet" href="/css/graphs.css">
+    <link rel="stylesheet" href="/css/mk_charts.css" />
+    <script src="/css/mk_charts.js"></script>
     <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
 </head>
 <body>
@@ -103,8 +105,21 @@
                                         <div class="body text-center">
                                             <div class="row">
                                                 <div class="col-6">
+                                                    <div class="mkCharts mt-2" data-percent="100" data-color="rgb(0,100,200)" data-size="155" data-stroke="1">
+                                                        <svg class="mkc_circle-chart" viewBox="0 0 36 36" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="mkc_circle-bg" stroke="#D2EADA" stroke-width="0.9" fill="none" d="M18 2.0845
+                                                              a 15.9155 15.9155 0 0 1 0 31.831
+                                                              a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        <path class="mkc_circle" stroke="#61CD84" stroke-width="1.6" stroke-dasharray="50" stroke-linecap="round" fill="#F3F8F5" d="M18 2.0845
+                                                              a 15.9155 15.9155 0 0 1 0 31.831
+                                                              a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                                                        </svg>
+                                                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" style="margin-top: -102px;">
+                                                            <div class="h2 font-weight-bold">82<span>%</span></div>
+                                                        </div>
+                                                    </div>
                                                     <!-- Progress bar 1 -->
-                                                    <div class="progress progress12 mr-auto mt-3" data-value='92' >
+                                                    <!-- <div class="progress progress12 mr-auto mt-3" data-value='75' >
                                                         <span class="progress-left">
                                                             <span class="progress-bar"></span>
                                                         </span>
@@ -114,12 +129,11 @@
                                                         <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
                                                         <div class="h2 font-weight-bold">82<span>%</span></div>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                     <!-- END -->
                                                 </div>
                                                 <div class="col-6 pl-0" style="padding-right:20px;">
-                                                    <div class="kt-space-10"></div>
-                                                    <div class="row pb-2 mt-5">
+                                                    <div class="row pb-2 mt-4">
                                                         <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>ROI</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
                                                     </div>
                                                     <div class="progress progress-sm">
@@ -133,7 +147,7 @@
 													</div>
                                                 </div>
                                             </div>
-                                            <div class="row mt-2">
+                                            <div class="row mt-3">
                                                 <div class="col-6" style="padding-left:15px;">
                                                     <div class="row pb-2">
                                                         <div class="col-lg-6 text-left NormalFontFBA fontgreyColorFBA"><label></label>Sales</div><div class="col-lg-6 text-right NormalFontFBA fontblackColorFBA">Excellent</div>
@@ -367,10 +381,10 @@
 
             if (value > 0) {
                 if (value <= 50) {
-                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+                  right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
                 } else {
-                right.css('transform', 'rotate(180deg)')
-                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+                  right.css('transform', 'rotate(180deg)')
+                  left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
                 }
             }
 
@@ -378,7 +392,7 @@
 
             function percentageToDegrees(percentage) {
 
-            return percentage / 100 * 360
+                return percentage / 100 * 360
 
             }
 
