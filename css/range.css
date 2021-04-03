@@ -1,0 +1,328 @@
+#filter .slider_container{
+    display: block;
+    width: 99.5%;
+    background-color: rgba(0,0,0,0);
+    height: 15%;
+    min-height: 85px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0);
+    -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0);
+    box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0);
+    margin-top:1px;
+    border-bottom: 1px solid gray;
+}
+
+#filter .slider_container p{
+    font-weight: 300;
+    margin-left: 5%;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    margin:0;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+#filter .slider_container p:nth-of-type(1){
+   font-weight: 500;
+   font-size: 0.8em;
+   margin-bottom: 0;
+   padding-top:10px;
+}
+
+#filter .slider_container .gender{
+    outline: 0;
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    width: 45%;
+    height: 20px;
+    max-width: 150px;
+    border-radius: 20px;
+    margin: 0.8%;
+    cursor: pointer;
+    font-size: 0.65em;
+}
+
+#filter .slider_container .gender:focus{
+    outline: 0;
+}
+#filter .slider_container .gender:hover{
+        background-color: #EA0A8A;
+        background-image: -webkit-linear-gradient(#EA0A8A, #ec5aae);
+        background-image: -moz-linear-gradient(#EA0A8A, #ec5aae);
+        background-image: -o-linear-gradient(#EA0A8A, #ec5aae);
+        background-image: linear-gradient(#EA0A8A, #ec5aae);
+        /*text-shadow: 1px 1px 2px black , 0 0 25px black , 0 0 5px black;
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.75);*/
+        cursor: pointer;
+        color: #ffffff;
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.30);
+        -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.30);
+        box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.30);
+        border: 0px solid #ffffff;
+
+}
+
+#filter .slider_container .active{
+    background: #EA0A8A;
+    color: #ffffff;
+    border: 0px solid #ffffff;
+}
+
+
+#filter input[type=range]{
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 80%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+    margin-left: 10%;
+}
+
+#filter input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+#filter input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+#filter input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+#filter input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #000000;
+    height: 3vh;
+    width: 3vh;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+     max-height: 15px;
+    max-width: 15px;
+    border-radius: 100%;
+    margin-top: -4px;
+}
+
+/* All the same stuff for Firefox */
+#filter input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 3vh;
+    width: 3vh;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+     max-height: 15px;
+    max-width: 15px;
+    border-radius: 100%;
+    margin-top: -4px;
+}
+
+/* All the same stuff for IE */
+#filter input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+    max-height: 15px;
+    max-width: 15px;
+    border-radius: 100%;
+    margin-top: -3px;
+}
+
+
+
+#filter input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: none transparent;
+    border-radius: 1.3px;
+    border: 0px solid #010101;
+    }
+
+#filter input[type=range]:focus::-webkit-slider-runnable-track {
+    background: none transparent;
+    }
+
+#filter input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: none transparent;
+    border-radius: 1.3px;
+    border: 20px solid #FFFFFF;
+    margin: 0;
+    }
+
+#filter input[type=range]::-ms-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    z-index: -9;
+    border: 20px solid #FFFFFF;
+    margin: 0;
+    }
+
+
+
+
+
+
+#filter input[name='distanceslider']::-ms-fill-lower {
+    background: #EA0A8A;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+    
+    }
+#filter input[name='distanceslider']:focus::-ms-fill-lower {
+    background: #EA0A8A;
+    }
+#filter input[name='distanceslider']::-ms-fill-upper {
+    background: #c5c5c5;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+    }
+#filter input[name='distanceslider']:focus::-ms-fill-upper {
+    background: #c5c5c5;
+    }
+
+#filter .ghost{
+    position: absolute;
+    z-index:1;
+    pointer-events: none;
+}
+
+ #filter .ghost::-webkit-slider-thumb{
+    z-index:1;
+    pointer-events: all;
+}
+
+ #filter .ghost::-moz-range-thumb {
+    z-index:1;
+    pointer-events: all;
+ }
+
+#filter .ghost::-ms-thumb {
+    z-index:1;
+    pointer-events: all;
+ }
+
+ #filter .ghost::-webkit-slider-runnable-track {
+    z-index: -10;
+    pointer-events: none;
+}
+
+#filter .ghost:focus::-webkit-slider-runnable-track {
+   z-index: -10;
+   pointer-events: none;
+}
+
+#filter .ghost::-moz-range-track {
+    z-index: -10;
+    pointer-events: none;
+    visibility: hidden;
+}
+#filter .ghost::-ms-track {
+    z-index: -40;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+#filter .ghost::-ms-fill-lower {
+    background: none transparent;
+    border: 0px solid #010101;
+    border-radius: 2.6px; 
+    visibility: hidden;
+    z-index: -9;
+}
+#filter .ghost:focus::-ms-fill-lower {
+    background: none transparent;;
+}
+#filter .ghost::-ms-fill-upper {
+    background: #c5c5c5;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+}
+#filter .ghost:focus::-ms-fill-upper {
+    background: #c5c5c5;
+}
+
+
+
+
+
+
+#filter .main{
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+ #filter .main::-webkit-slider-thumb{
+    z-index: 0;
+    pointer-events: all;
+}
+
+#filter .main::-moz-range-thumb {
+    z-index: 0;
+    pointer-events: all;
+ }
+#filter .main::-ms-thumb{
+    z-index: 1;
+    pointer-events: all;
+}
+#filter .main::-webkit-slider-runnable-track {
+   z-index: -11;
+    pointer-events: none;
+}
+
+#filter .main:focus::-webkit-slider-runnable-track {
+  z-index: -11;
+   pointer-events: none;
+}
+
+#filter .main::-moz-range-track {
+   z-index: -11;
+   border: 0px solid #FFFFFF;
+    pointer-events: none;
+    height: 15px;
+}
+#filter .main::-ms-track {
+    z-index: 0;
+    pointer-events: none;
+}
+
+#filter .main::-ms-fill-lower {
+    background: #c5c5c5;
+    border: 0px solid #010101;
+    border-radius: 2.6px; 
+}
+#filter .main:focus::-ms-fill-lower {
+    background: #c5c5c5;
+}
+#filter .main::-ms-fill-upper {
+    background: #EA0A8A;
+    border: 0px solid #010101;
+    border-radius: 2.6px;
+}
+#filter .main:focus::-ms-fill-upper {
+    background: #EA0A8A;
+}

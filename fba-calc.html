@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="https://thestackcoder.github.io/zak-fba/css/style.css"> -->
+
 </head>
 <body>
 
@@ -43,7 +44,7 @@
                         <div>
                             <!--FBA Calculator-->
                             <div id="calculator">
-                                <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                                <div class="card-header d-flex flex-row align-items-center justify-content-between" style="border-radius: 5px 5px 0px 0px !important;">
                                     <p class="m-0">
                                         FBA Calculator
                                     </p>
@@ -59,7 +60,11 @@
                                                         <label class="middle m-0 p-0" for="formControlRange">Voucher Discount</label>
                                                         <p class="m-0 orange_text" id="demo"></p>
                                                      </div>
-                                                  <input type="range" class="form-control-range range" min="0" max="100" value="15" style="width: 290px !important;" id="formControlRange">
+                                                  <input type="range" class="form-control-range range" min="0" max="100" value="50" style="width: 290px !important;" id="formControlRange">
+                                                    <!-- <div class="third">
+                                                        <input type="range" min="0" max="100" step="1" value="40" data-rangeslider>
+                                                        <div class="output"></div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="d-flex flex-row justify-content-between mt-2">
                                                     <label class="middle m-0 p-0" for="formControlRange">Buy Price</label>
@@ -168,19 +173,25 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/dist/rangeslider-js.min.js"></script>
 
     <script>
 
-        $('input[type="range"]').change(function () {
-            var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+        // $('input[type="range"]').change(function () {
+        //     var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
             
-            $(this).css('background-image',
-                        '-webkit-gradient(linear, left top, right top, '
-                        + 'color-stop(' + val + ', #FF9900), '
-                        + 'color-stop(' + val + ', #F2F4F6)'
-                        + ')'
-                        );
-        });
+        //     $(this).css('background-image',
+        //                 '-webkit-gradient(linear, left top, right top, '
+        //                 + 'color-stop(' + val + ', #FF9900), '
+        //                 + 'color-stop(' + val + ', #F2F4F6)'
+        //                 + ')'
+        //                 );
+        // });
+
+        // .chrome styling
+        $( '.range' ).on( 'input', function( ) {
+            $( this ).css( 'background', 'linear-gradient(to right, #FF9900 0%, #FF9900 '+this.value +'%, #F2F4F6 ' + this.value + '%, #F2F4F6 100%)' );
+        } );
 
         $(document).ready(function(){
             $('#minimize').click(function(){
@@ -210,5 +221,26 @@
         }
 
     </script>
+     <script type="text/javascript">
+       var sliderEl1 = document.querySelector('.first [data-rangeslider]')
+       var sliderEl2 = document.querySelector('.second [data-rangeslider]')
+       var sliderEl3 = document.querySelector('.third [data-rangeslider]')
+     
+       sliderEl2.addEventListener('input', (ev) => {
+         document.querySelector('.second .output').innerHTML = ev.target.value
+       })
+       sliderEl3.addEventListener('input', (ev) => {
+         document.querySelector('.third .output').innerHTML = ev.target.value
+       })
+     
+       rangesliderJs.create(sliderEl1, {min: 0, max: 5, step: 0.5})
+       rangesliderJs.create(sliderEl2)
+       rangesliderJs.create(sliderEl3, {
+         onSlide: function () {
+           console.log(this)
+         }
+       })
+     
+     </script>
 </body>
 </html>

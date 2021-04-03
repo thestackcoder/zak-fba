@@ -343,16 +343,16 @@ input:focus{
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 356px;
-    height: 10px;
     border-radius: 5px;
     outline: none;
-    background-image: -webkit-gradient(
+    background: linear-gradient(to right, #FF9900 0%, #FF9900 50%, #F2F4F6 50%, #F2F4F6 100%);
+    /* background-image: -webkit-gradient(
         linear,
         left top,
         right top,
         color-stop(0.15, #FF9900),
         color-stop(0.15, #F2F4F6)
-    );
+    ); */
 }
 
 .orange_text{
@@ -391,24 +391,30 @@ input:focus{
   }
 
   .range::-moz-range-thumb {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: #FF9900;
     cursor: pointer;
     -webkit-box-shadow: 0 0 8px #ccc;
     box-shadow: 0 0 8px #ccc;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     border-radius: 50%;
   } 
 
  .range::-webkit-slider-runnable-track {
-    -webkit-appearance: none !important;
-    color: #13bba4 !important;  
+    color: #FF9900 !important;  
+
  }
+
+.range::-webkit-progress-value {
+    background-color: orange !important; 
+  }
 
   /** FF*/
   input[type="range"]::-moz-range-progress {
     background-color: #FF9900 !important; 
+    height: 5px;
+    border-radius: 3px;
   }
   /* IE*/
   input[type="range"]::-ms-fill-lower {
@@ -441,7 +447,7 @@ input:focus{
     .betn{
         background-color: #FF9900 !important; 
         color: #3E4042 !important;
-        font-family: Circular_Bold !important;
+        font-family: Circular_Medium !important;
     }
 
     .switch {
