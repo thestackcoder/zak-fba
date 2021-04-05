@@ -1,11 +1,11 @@
 @font-face {
     font-family: Circular;
-    src: url('https://thestackcoder.github.io/zak-fba/circular-std/fonts/CircularStd-Bold.woff');
+    src: url('/circular-std/fonts/CircularStd-Bold.woff');
 }
 
 @font-face {
     font-family: Circular_Medium;
-    src: url('https://thestackcoder.github.io/zak-fba/circular-std/fonts/CircularStd-Medium.woff');
+    src: url('/circular-std/fonts/CircularStd-Medium.woff');
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: Circular_Book;
-    src: url('https://thestackcoder.github.io/zak-fba/circular-std/fonts/CircularStd-Book.woff');
+    src: url('/circular-std/fonts/CircularStd-Book.woff');
 }
 
 
@@ -924,136 +924,727 @@ input:focus{
         top: 44px;
     }
 
-    .rotateimg10 {
-        transform: rotate(-80deg);
+    .rotateimg1 {
+        transform: rotate(-88.2deg);
         transform-origin: top left;
-        left: 123px;
-        top: 37px;
+        left: 124px;
+        top: 43px;
     }
 
-    .rotateimg20 {
-        transform: rotate(-70deg);
+    .rotateimg2 {
+        transform: rotate(-86.4deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 42px;
+    }
+
+    .rotateimg3 {
+        transform: rotate(-84.6deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 41px;
+    }
+
+    .rotateimg4 {
+        transform: rotate(-82.8deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 40px;
+    }
+
+    .rotateimg5 {
+        transform: rotate(-81deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 39px;
+    }
+
+    .rotateimg6 {
+        transform: rotate(-79.2deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 38px;
+    }
+
+    .rotateimg7 {
+        transform: rotate(-77.4deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 36px;
+    }
+
+    .rotateimg8 {
+        transform: rotate(-75.6deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 35px;
+    }
+
+    .rotateimg9 {
+        transform: rotate(-73.8deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 34px;
+    }
+
+    .rotateimg10 {
+        transform: rotate(-72deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 33px;
+    }
+
+    .rotateimg11 {
+        transform: rotate(-70.2deg);
+        transform-origin: top left;
+        left: 124px;
+        top: 32px;
+    }
+
+    .rotateimg12 {
+        transform: rotate(-68.4deg);
+        transform-origin: top left;
+        left: 125px;
+        top: 31px;
+    }
+
+    .rotateimg13 {
+        transform: rotate(-66.6deg);
         transform-origin: top left;
         left: 125px;
         top: 30px;
     }
 
-    .rotateimg30 {
-        transform: rotate(-60deg);
+    .rotateimg14 {
+        transform: rotate(-64.8deg);
+        transform-origin: top left;
+        left: 126px;
+        top: 29px;
+    }
+
+    .rotateimg15 {
+        transform: rotate(-63deg);
+        transform-origin: top left;
+        left: 126px;
+        top: 27px;
+    }
+
+    .rotateimg16 {
+        transform: rotate(-61.2deg);
+        transform-origin: top left;
+        left: 127px;
+        top: 27px;
+    }
+
+    .rotateimg17 {
+        transform: rotate(-59.4deg);
+        transform-origin: top left;
+        left: 127px;
+        top: 26px;
+    }
+
+    .rotateimg18 {
+        transform: rotate(-57.6deg);
+        transform-origin: top left;
+        left: 127px;
+        top: 25px;
+    }
+
+    .rotateimg19 {
+        transform: rotate(-55.8deg);
+        transform-origin: top left;
+        left: 128px;
+        top: 24px;
+    }
+
+    .rotateimg20 {
+        transform: rotate(-54deg);
         transform-origin: top left;
         left: 128px;
         top: 22px;
     }
 
-    .rotateimg40 {
-        transform: rotate(-50deg);
+    .rotateimg21 {
+        transform: rotate(-52.2deg);
         transform-origin: top left;
-        left: 132px;
+        left: 129px;
+        top: 21px;
+    }
+
+    .rotateimg22 {
+        transform: rotate(-50.4deg);
+        transform-origin: top left;
+        left: 129px;
+        top: 20px;
+    }
+
+    .rotateimg23 {
+        transform: rotate(-48.6deg);
+        transform-origin: top left;
+        left: 130px;
+        top: 20px;
+    }
+
+    .rotateimg24 {
+        transform: rotate(-46.8deg);
+        transform-origin: top left;
+        left: 131px;
+        top: 19px;
+    }
+
+    .rotateimg25 {
+        transform: rotate(-45deg);
+        transform-origin: top left;
+        left: 133px;
         top: 17px;
     }
 
-    .rotateimg50 {
-        transform: rotate(-40deg);
+    .rotateimg26 {
+        transform: rotate(-43.2deg);
+        transform-origin: top left;
+        left: 133px;
+        top: 17px;
+    }
+
+    .rotateimg27 {
+        transform: rotate(-41.4deg);
+        transform-origin: top left;
+        left: 134px;
+        top: 16px;
+    }
+    
+    .rotateimg28 {
+        transform: rotate(-39.6deg);
+        transform-origin: top left;
+        left: 134px;
+        top: 15px;
+    } 
+    
+    .rotateimg29 {
+        transform: rotate(-37.8deg);
+        transform-origin: top left;
+        left: 135px;
+        top: 14px;
+    }   
+
+    .rotateimg30 {
+        transform: rotate(-36deg);
         transform-origin: top left;
         left: 137px;
+        top: 13px;
+    }   
+
+
+    .rotateimg31 {
+        transform: rotate(-34.2deg);
+        transform-origin: top left;
+        left: 139px;
         top: 12px;
-    }
+    }   
 
-    .rotateimg60 {
-        transform: rotate(-30deg);
+    .rotateimg32 {
+        transform: rotate(-32.4deg);
         transform-origin: top left;
-        left: 142px;
+        left: 140px;
+        top: 12px;
+    }   
+
+    .rotateimg33 {
+        transform: rotate(-30.6deg);
+        transform-origin: top left;
+        left: 140px;
+        top: 11px;
+    }   
+
+    .rotateimg34 {
+        transform: rotate(-28.8deg);
+        transform-origin: top left;
+        left: 141px;
+        top: 11px;
+    }   
+
+    .rotateimg35 {
+        transform: rotate(-27deg);
+        transform-origin: top left;
+        left: 143px;
+        top: 10px;
+    }   
+
+    .rotateimg36 {
+        transform: rotate(-25.2deg);
+        transform-origin: top left;
+        left: 143px;
+        top: 9px;
+    }   
+
+    .rotateimg37 {
+        transform: rotate(-23.4deg);
+        transform-origin: top left;
+        left: 145px;
         top: 8px;
-    }
+    }   
 
-    .rotateimg70 {
-        transform: rotate(-20deg);
+    .rotateimg38 {
+        transform: rotate(-21.6deg);
         transform-origin: top left;
-        left: 148px;
+        left: 146px;
+        top: 7px;
+    }   
+
+    .rotateimg39 {
+        transform: rotate(-19.8deg);
+        transform-origin: top left;
+        left: 147px;
+        top: 6px;
+    }   
+
+    .rotateimg40 {
+        transform: rotate(-18deg);
+        transform-origin: top left;
+        left: 147px;
+        top: 6px;
+    }  
+
+    .rotateimg41 {
+        transform: rotate(-16.2deg);
+        transform-origin: top left;
+        left: 149px;
+        top: 6px;
+    }  
+
+    .rotateimg42 {
+        transform: rotate(-14.4deg);
+        transform-origin: top left;
+        left: 149px;
+        top: 6px;
+    }  
+
+    .rotateimg43 {
+        transform: rotate(-12.6deg);
+        transform-origin: top left;
+        left: 151px;
+        top: 6px;
+    }  
+
+    .rotateimg44 {
+        transform: rotate(-10.8deg);
+        transform-origin: top left;
+        left: 151px;
+        top: 6px;
+    }  
+
+    .rotateimg45 {
+        transform: rotate(-9deg);
+        transform-origin: top left;
+        left: 152px;
+        top: 6px;
+    }  
+
+    .rotateimg46 {
+        transform: rotate(-7.2deg);
+        transform-origin: top left;
+        left: 152px;
+        top: 6px;
+    }  
+
+    .rotateimg47 {
+        transform: rotate(-7.2deg);
+        transform-origin: top left;
+        left: 153px;
         top: 5px;
-    }
+    }  
 
-    .rotateimg80 {
-        transform: rotate(-10deg);
+    .rotateimg48 {
+        transform: rotate(-5.4deg);
         transform-origin: top left;
-        left: 155px;
-        top: 3px;
-    }
+        left: 156px;
+        top: 4px;
+    }  
 
-    .rotateimg90 {
+    .rotateimg49 {
+        transform: rotate(-3.6deg);
+        transform-origin: top left;
+        left: 158px;
+        top: 4px;
+    }  
+
+    .rotateimg50 {
         transform: rotate(0deg);
         transform-origin: top left;
+        left: 159px;
+        top: 3px;
+    }  
+
+    /* after 50 */
+
+    .rotateimg51 {
+        transform: rotate(1.8deg);
+        transform-origin: top left;
+        left: 159px;
+        top: 3px;
+    }  
+
+    .rotateimg52 {
+        transform: rotate(3.6deg);
+        transform-origin: top left;
+        left: 159px;
+        top: 3px;
+    }  
+
+    .rotateimg53 {
+        transform: rotate(5.4deg);
+        transform-origin: top left;
         left: 162px;
-        top: 1px;
-    }
+        top: 3px;
+    }  
+
+    .rotateimg54 {
+        transform: rotate(7.2deg);
+        transform-origin: top left;
+        left: 164px;
+        top: 3px;
+    }  
+
+    .rotateimg55 {
+        transform: rotate(9deg);
+        transform-origin: top left;
+        left: 166px;
+        top: 3px;
+    }  
+
+    .rotateimg56 {
+        transform: rotate(10.8deg);
+        transform-origin: top left;
+        left: 167px;
+        top: 3px;
+    }  
+
+    .rotateimg57 {
+        transform: rotate(12.6deg);
+        transform-origin: top left;
+        left: 168px;
+        top: 3px;
+    }  
+
+    .rotateimg58 {
+        transform: rotate(14.4deg);
+        transform-origin: top left;
+        left: 170px;
+        top: 3px;
+    }  
+
+    .rotateimg59 {
+        transform: rotate(16.2deg);
+        transform-origin: top left;
+        left: 171px;
+        top: 3px;
+    }  
+
+    .rotateimg60 {
+        transform: rotate(18deg);
+        transform-origin: top left;
+        left: 172px;
+        top: 3px;
+    }  
+
+    .rotateimg61 {
+        transform: rotate(19.8deg);
+        transform-origin: top left;
+        left: 173px;
+        top: 4px;
+    }  
+
+    .rotateimg62 {
+        transform: rotate(21.6deg);
+        transform-origin: top left;
+        left: 174px;
+        top: 4px;
+    }  
+
+    .rotateimg63 {
+        transform: rotate(23.4deg);
+        transform-origin: top left;
+        left: 175px;
+        top: 5px;
+    }  
+
+    .rotateimg64 {
+        transform: rotate(25.2deg);
+        transform-origin: top left;
+        left: 176px;
+        top: 5px;
+    }  
+
+    .rotateimg65 {
+        transform: rotate(27deg);
+        transform-origin: top left;
+        left: 177px;
+        top: 6px;
+    }  
+
+    .rotateimg66 {
+        transform: rotate(28.8deg);
+        transform-origin: top left;
+        left: 178px;
+        top: 6px;
+    }  
+
+    .rotateimg67 {
+        transform: rotate(30.6deg);
+        transform-origin: top left;
+        left: 180px;
+        top: 6px;
+    }  
+
+    .rotateimg68 {
+        transform: rotate(32.4deg);
+        transform-origin: top left;
+        left: 180px;
+        top: 7px;
+    }  
+
+    .rotateimg69 {
+        transform: rotate(34.2deg);
+        transform-origin: top left;
+        left: 182px;
+        top: 8px;
+    }  
+
+    .rotateimg70 {
+        transform: rotate(36deg);
+        transform-origin: top left;
+        left: 184px;
+        top: 9px;
+    }  
+
+    .rotateimg71 {
+        transform: rotate(37.8deg);
+        transform-origin: top left;
+        left: 185px;
+        top: 10px;
+    }  
+
+    .rotateimg72 {
+        transform: rotate(39.6deg);
+        transform-origin: top left;
+        left: 185px;
+        top: 10px;
+    }  
+
+
+    .rotateimg73 {
+        transform: rotate(41.4deg);
+        transform-origin: top left;
+        left: 186px;
+        top: 10px;
+    }  
+
+    .rotateimg74 {
+        transform: rotate(43.2deg);
+        transform-origin: top left;
+        left: 187px;
+        top: 11px;
+    }  
+
+
+    .rotateimg75 {
+        transform: rotate(45deg);
+        transform-origin: top left;
+        left: 189px;
+        top: 12px;
+    }  
+
+
+    .rotateimg76 {
+        transform: rotate(46.8deg);
+        transform-origin: top left;
+        left: 190px;
+        top: 13px;
+    }  
+
+
+    .rotateimg77 {
+        transform: rotate(48.6deg);
+        transform-origin: top left;
+        left: 190px;
+        top: 13px;
+    }  
+
+    .rotateimg78 {
+        transform: rotate(50.4deg);
+        transform-origin: top left;
+        left: 190px;
+        top: 14px;
+    }  
+
+
+    /* after 78 */
+
+    .rotateimg79 {
+        transform: rotate(50.4deg);
+        transform-origin: top left;
+        left: 190px;
+        top: 14px;
+    }  
+
+    .rotateimg80 {
+        transform: rotate(52.2deg);
+        transform-origin: top left;
+        left: 190px;
+        top: 14px;
+    }  
+
+    .rotateimg81 {
+        transform: rotate(54deg);
+        transform-origin: top left;
+        left: 192px;
+        top: 16px;
+    }  
+
+    .rotateimg82 {
+        transform: rotate(55.8deg);
+        transform-origin: top left;
+        left: 192px;
+        top: 16px;
+    }  
+
+
+    .rotateimg83 {
+        transform: rotate(57.6deg);
+        transform-origin: top left;
+        left: 192px;
+        top: 17px;
+    }  
+
+    .rotateimg84 {
+        transform: rotate(59.4deg);
+        transform-origin: top left;
+        left: 194px;
+        top: 18px;
+    }  
+
+    .rotateimg85 {
+        transform: rotate(61.2deg);
+        transform-origin: top left;
+        left: 196px;
+        top: 20px;
+    }  
+
+
+    .rotateimg86 {
+        transform: rotate(63deg);
+        transform-origin: top left;
+        left: 197px;
+        top: 21px;
+    }  
+
+    .rotateimg87 {
+        transform: rotate(64.8deg);
+        transform-origin: top left;
+        left: 197px;
+        top: 22px;
+    }  
+
+
+    .rotateimg88 {
+        transform: rotate(66.6deg);
+        transform-origin: top left;
+        left: 197px;
+        top: 22px;
+    }  
+
+
+    .rotateimg89 {
+        transform: rotate(68.4deg);
+        transform-origin: top left;
+        left: 197px;
+        top: 23px;
+    }  
+
+
+    .rotateimg90 {
+        transform: rotate(70.2deg);
+        transform-origin: top left;
+        left: 199px;
+        top: 23px;
+    }  
+
+
+    .rotateimg91 {
+        transform: rotate(72deg);
+        transform-origin: top left;
+        left: 200px;
+        top: 25px;
+    }  
+
+
+    .rotateimg92 {
+        transform: rotate(73.8deg);
+        transform-origin: top left;
+        left: 201px;
+        top: 26px;
+    }  
+
+
+    .rotateimg93 {
+        transform: rotate(75.6deg);
+        transform-origin: top left;
+        left: 201px;
+        top: 27px;
+    }  
+
+
+    .rotateimg94 {
+        transform: rotate(77.4deg);
+        transform-origin: top left;
+        left: 202px;
+        top: 29px;
+    }  
+
+
+    .rotateimg95 {
+        transform: rotate(79.2deg);
+        transform-origin: top left;
+        left: 203px;
+        top: 31px;
+    }  
+
+
+    .rotateimg96 {
+        transform: rotate(81deg);
+        transform-origin: top left;
+        left: 203px;
+        top: 32px;
+    }  
+
+
+    .rotateimg97 {
+        transform: rotate(82.8deg);
+        transform-origin: top left;
+        left: 204px;
+        top: 33px;
+    }  
+
+
+    .rotateimg98 {
+        transform: rotate(84.6deg);
+        transform-origin: top left;
+        left: 203px;
+        top: 34px;
+    }  
+
+
+    .rotateimg99 {
+        transform: rotate(87deg);
+        transform-origin: top left;
+        left: 203px;
+        top: 34px;
+    }  
 
 
     .rotateimg100 {
-        transform: rotate(10deg);
-        transform-origin: top left;
-        left: 169px;
-        top: 2px;
-    }
-
-    .rotateimg110 {
-        transform: rotate(20deg);
-        transform-origin: top left;
-        left: 176px;
-        top: 3px;
-    }
-
-    .rotateimg120 {
-        transform: rotate(30deg);
-        transform-origin: top left;
-        left: 181px;
-        top: 6px;
-    }
-
-    .rotateimg130 {
-        transform: rotate(40deg);
-        transform-origin: top left;
-        left: 187px;
-        top: 9px;
-    }
-
-    .rotateimg140 {
-        transform: rotate(50deg);
-        transform-origin: top left;
-        left: 193px;
-        top: 12px;
-    }
-
-    .rotateimg150 {
-        transform: rotate(60deg);
-        transform-origin: top left;
-        left: 197px;
-        top: 17px;
-    }
-
-    .rotateimg160 {
-        transform: rotate(70deg);
-        transform-origin: top left;
-        left: 200px;
-        top: 24px;
-    }
-
-    .rotateimg170 {
-        transform: rotate(80deg);
-        transform-origin: top left;
-        left: 203px;
-        top: 30px;
-    }
-
-    .rotateimg180 {
         transform: rotate(90deg);
         transform-origin: top left;
-        left: 205px;
+        left: 206px;
         top: 38px;
-    }
-
-
-
-
-
-
-    
+    }  
