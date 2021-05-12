@@ -309,3 +309,7 @@
     padding: 0px 5px;
   }
 
+  .dropdown-menu{
+    min-width: 5rem !important;
+  }
+
