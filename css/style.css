@@ -737,13 +737,12 @@ input:focus{
         width: 35px;
     }
 
-    .container {
+    .containerxx {
         display: block;
         position: relative;
-        padding-left: 35px;
-        margin-bottom: 12px;
+        padding-left: 15px;
+        font-size: 9px;
         cursor: pointer;
-        font-size: 12px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -762,8 +761,8 @@ input:focus{
       /* Create a custom checkbox */
       .checkmark2 {
         position: absolute;
-        top: 12px;
-        left: 35px;
+        top: 1px;
+        left: 0;
         height: 8px;
         width: 8px;
         background-color: #fff;
